@@ -1917,7 +1917,7 @@ html[data-theme="dark"] .contact-info-section:first-child {
         gap: 30px;
         align-items: flex-start;
         font-size: 0.85rem;
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     .menu-footer-right {
