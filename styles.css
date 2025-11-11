@@ -1996,14 +1996,11 @@ html[data-theme="dark"] .contact-info-section:first-child {
     .menu-footer-right p {
         margin: 2px 0;
         font-size: 0.8rem;
+        display: none;
     }
 
     .menu-languages {
         margin-top: 5px;
-    }
-
-    .menu-footer-right p:last-of-type {
-        display: none;
     }
 
     .theme-toggle {
