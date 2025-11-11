@@ -1950,8 +1950,15 @@ html[data-theme="dark"] .contact-info-section:first-child {
         padding-top: 10px;
     }
 
+    .menu-footer-left {
+        align-items: center;
+    }
+
     .menu-footer-right {
-        text-align: left;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .menu-footer-right p:last-of-type {
