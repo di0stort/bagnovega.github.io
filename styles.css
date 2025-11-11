@@ -1954,11 +1954,11 @@ html[data-theme="dark"] .contact-info-section:first-child {
     }
 
     .fullscreen-menu-content {
-        padding: 100px 20px 40px;
+        padding: 100px 20px 20px;
     }
 
     .fullscreen-nav {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
     .fullscreen-link {
