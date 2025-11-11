@@ -619,9 +619,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Single hero image - no slider needed
 
 // ==================== SCROLL REVEAL ANIMATIONS ====================
+const isMobile = window.innerWidth <= 768;
 const scrollRevealOptions = {
-    threshold: 0.15,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: isMobile ? 0.1 : 0.15,
+    rootMargin: isMobile ? '0px 0px -30px 0px' : '0px 0px -50px 0px'
 };
 
 const scrollRevealObserver = new IntersectionObserver((entries) => {

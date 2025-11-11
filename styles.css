@@ -2887,13 +2887,13 @@ body {
 /* Mobile: Reduce animation complexity */
 @media (max-width: 768px) {
     .reveal-hidden {
-        transform: translateY(20px);
-        transition-duration: 0.5s;
+        transform: translateY(30px);
+        transition: opacity 0.9s ease, transform 0.9s ease;
     }
 
     .grid-image,
     .pricing-col,
     .feature-item {
-        transition-delay: 0s !important;
+        transition-delay: 0.1s !important;
     }
 }
