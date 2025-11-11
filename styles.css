@@ -1954,7 +1954,9 @@ html[data-theme="dark"] .contact-info-section:first-child {
     }
 
     .fullscreen-menu-content {
-        padding: 100px 20px 20px;
+        padding: 100px 20px 40px;
+        justify-content: flex-start;
+        min-height: auto;
     }
 
     .fullscreen-nav {
