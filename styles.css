@@ -1238,8 +1238,9 @@ html[data-theme="dark"] .theme-toggle {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background: var(--primary-color);
-    color: var(--white);
+    background: transparent;
+    color: var(--text-dark);
+    border: 2px solid var(--text-dark);
     padding: 1rem 2.5rem;
     border-radius: 50px;
     font-size: 1rem;
@@ -1247,13 +1248,19 @@ html[data-theme="dark"] .theme-toggle {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: var(--transition-base);
-    box-shadow: 0 4px 15px rgba(61, 168, 204, 0.3);
+}
+
+html[data-theme="dark"] .btn-menu-download {
+    color: var(--white);
+    border-color: var(--white);
 }
 
 .btn-menu-download:hover {
-    background: var(--primary-dark);
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(61, 168, 204, 0.4);
+    box-shadow: 0 8px 25px rgba(73, 144, 74, 0.4);
 }
 
 .btn-menu-download svg {
@@ -1981,6 +1988,10 @@ html[data-theme="dark"] .contact-info-section:first-child {
     }
 
     .menu-footer-right p:last-of-type {
+        display: none;
+    }
+
+    .theme-toggle {
         display: none;
     }
 
