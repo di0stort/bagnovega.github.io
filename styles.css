@@ -1841,6 +1841,19 @@ html[data-theme="dark"] .contact-info-section:first-child {
         --section-padding: 60px 0;
     }
 
+    .btn-menu-download {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.85rem;
+        gap: 8px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .btn-menu-download svg {
+        width: 18px;
+        height: 18px;
+    }
+
     .btn-prenota-nav {
         padding: 10px;
         width: 44px;
