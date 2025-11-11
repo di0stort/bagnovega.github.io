@@ -1962,8 +1962,8 @@ html[data-theme="dark"] .contact-info-section:first-child {
     }
 
     .fullscreen-link {
-        font-size: clamp(1.5rem, 5vw, 2.5rem);
-        padding: 10px 15px;
+        font-size: clamp(1.4rem, 4.5vw, 2.2rem);
+        padding: 6px 15px;
     }
 
     .fullscreen-menu-footer {
