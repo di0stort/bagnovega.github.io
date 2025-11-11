@@ -696,9 +696,12 @@ featureItems.forEach((item, index) => {
 });
 
 const masonryItems = document.querySelectorAll('.masonry-item');
-masonryItems.forEach((item, index) => {
-    item.style.transitionDelay = `${index * 0.015}s`;
-});
+// Only add transition delay on desktop for better mobile performance
+if (!isMobile) {
+    masonryItems.forEach((item, index) => {
+        item.style.transitionDelay = `${index * 0.015}s`;
+    });
+}
 
 const menuItems = document.querySelectorAll('.menu-item-full');
 menuItems.forEach((item, index) => {

@@ -2896,4 +2896,16 @@ body {
     .feature-item {
         transition-delay: 0.1s !important;
     }
+
+    /* Disable gallery animations on mobile for better performance */
+    .masonry-item {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .masonry-item.reveal-hidden {
+        opacity: 1 !important;
+        transform: none !important;
+    }
 }
