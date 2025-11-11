@@ -1934,7 +1934,11 @@ html[data-theme="dark"] .contact-info-section:first-child {
     }
 
     .fullscreen-menu-content {
-        padding: 80px 20px 60px;
+        padding: 100px 20px 40px;
+    }
+
+    .fullscreen-nav {
+        margin-bottom: 30px;
     }
 
     .fullscreen-link {
@@ -1945,13 +1949,15 @@ html[data-theme="dark"] .contact-info-section:first-child {
     .fullscreen-menu-footer {
         flex-direction: column;
         gap: 30px;
-        align-items: flex-start;
+        align-items: center;
         font-size: 0.85rem;
-        padding-top: 10px;
+        padding-top: 0;
+        width: 100%;
     }
 
     .menu-footer-left {
         align-items: center;
+        width: 100%;
     }
 
     .menu-footer-right {
