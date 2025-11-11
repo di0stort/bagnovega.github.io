@@ -1922,6 +1922,17 @@ html[data-theme="dark"] .contact-info-section:first-child {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 3rem;
+        text-align: center;
+    }
+
+    .footer-brand,
+    .footer-links,
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
     }
 
     .footer-links-grid {
@@ -1960,8 +1971,8 @@ html[data-theme="dark"] .contact-info-section:first-child {
     }
 
     .fullscreen-nav {
-        margin-bottom: 100px;
-    }
+        margin-bottom: 200px; 
+    } /*per spostare sezione telefono - zadina di cesenatico */
 
     .fullscreen-link {
         font-size: clamp(1.4rem, 4.5vw, 2.2rem);
