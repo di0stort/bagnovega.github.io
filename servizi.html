@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi - Bagno Vega 101</title>
+    <meta name="description" content="I servizi del Bagno Vega 101: ombrelloni, beach volley, area cani, bar e ristorante a Cesenatico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="theme-init.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="index.html" class="logo">
+                <span class="logo-text">VEGA</span>
+                <span class="logo-number">101</span>
+            </a>
+
+            <a href="contatti.html" class="btn-prenota-nav" data-i18n="nav.book">PRENOTA</a>
+        </div>
+
+        <!-- Fullscreen Menu -->
+        <div class="fullscreen-menu" id="fullscreenMenu">
+            <div class="fullscreen-menu-header">
+                <div class="fullscreen-logo">
+                    <span class="logo-text">VEGA</span>
+                    <span class="logo-number">101</span>
+                </div>
+                <button class="menu-close" id="menuClose" aria-label="Close menu">
+                    <span>&times;</span>
+                </button>
+            </div>
+
+            <div class="fullscreen-menu-content">
+                <ul class="fullscreen-nav">
+                    <li><a href="index.html" class="fullscreen-link" data-i18n="nav.home">HOME</a></li>
+                    <li><a href="servizi.html" class="fullscreen-link" data-i18n="nav.services">SERVIZI</a></li>
+                    <li><a href="menu.html" class="fullscreen-link" data-i18n="nav.menu">MENU</a></li>
+                    <li><a href="prezzi.html" class="fullscreen-link" data-i18n="nav.prices">PREZZI</a></li>
+                    <li><a href="galleria.html" class="fullscreen-link" data-i18n="nav.gallery">GALLERIA</a></li>
+                    <li><a href="contatti.html" class="fullscreen-link" data-i18n="nav.contacts">CONTATTI</a></li>
+                </ul>
+
+                <div class="fullscreen-menu-footer">
+                    <div class="menu-footer-left">
+                        <div class="menu-contact-item">
+                            <span class="menu-label" data-i18n="menu.phoneLabel">Tel:</span>
+                            <a href="tel:+390547821227">0547 82127</a>
+                        </div>
+                        <div class="menu-contact-item">
+                            <span class="menu-label" data-i18n="menu.mobileLabel">Cell:</span>
+                            <a href="tel:+393294728383">329 4728383</a>
+                        </div>
+                        <div class="menu-contact-item">
+                            <span class="menu-label" data-i18n="menu.mailLabel">M:</span>
+                            <a href="mailto:bagnovega101@gmail.com">bagnovega101@gmail.com</a>
+                        </div>
+                        <div class="menu-languages">
+                            <button class="lang-btn active" data-lang="it">
+                                <img src="https://flagcdn.com/w40/it.png" alt="Italiano" width="24">
+                            </button>
+                            <button class="lang-btn" data-lang="en">
+                                <img src="https://flagcdn.com/w40/gb.png" alt="English" width="24">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Weather Widget -->
+                    <div class="menu-weather-widget" id="weatherWidget">
+                        <div class="weather-icon">☀️</div>
+                        <div class="weather-info">
+                            <div class="weather-location">Cesenatico</div>
+                            <div class="weather-temp">28°</div>
+                            <div class="weather-day" data-i18n="menu.weatherToday">Oggi</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-footer-right">
+                        <p>Via Arenile Demaniale, 101,</p>
+                        <p>47042 Zadina di Cesenatico (FC)</p>
+                        <p>P.IVA: 03724890409</p>
+                        <div class="theme-toggle" role="group" aria-label="Imposta tema">
+                            <button class="theme-toggle-btn active" data-theme-mode="dark">
+                                <span class="theme-icon" aria-hidden="true">&#9790;</span>
+                                <span>Dark</span>
+                            </button>
+                            <button class="theme-toggle-btn" data-theme-mode="light">
+                                <span class="theme-icon" aria-hidden="true">&#9728;</span>
+                                <span>Light</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero-full">
+        <div class="page-hero-content">
+            <h1 data-i18n="services.heroTitle">I Nostri Servizi</h1>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Servizi Full Width -->
+    <section class="servizi-full">
+        <div class="servizio-full-item">
+            <div class="servizio-full-image">
+                <img src="assets/gallery/prova31.jpg" alt="80 Ombrelloni">
+            </div>
+            <div class="servizio-full-content">
+                <h2 data-i18n="services.items.ombrelloni.title">80 Ombrelloni</h2>
+                <p data-i18n="services.items.ombrelloni.body">Il nostro stabilimento dispone di 80 ombrelloni spaziosi e ben distanziati per garantire privacy e comfort durante la vostra giornata al mare. Ogni postazione &egrave; dotata di lettini di qualit&agrave; e pu&ograve; essere personalizzata secondo le vostre esigenze.</p>
+            </div>
+        </div>
+
+        <div class="servizio-full-item reverse">
+            <div class="servizio-full-image">
+                <img src="assets/gallery/prova18.jpg" alt="Ristorante">
+            </div>
+            <div class="servizio-full-content">
+                <h2 data-i18n="services.items.ristorante.title">Ristorante</h2>
+                <p data-i18n="services.items.ristorante.body">Cucina di qualit&agrave; con prodotti freschi e locali. Specialit&agrave; di pesce, pane fatto in casa ogni giorno e piatti della tradizione romagnola rivisitati con un tocco moderno.</p>
+                <div class="servizio-extra">
+                    <a href="menu.html" class="btn-discover-more" data-i18n="services.items.ristorante.cta">
+                        Scopri di pi&ugrave; &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="servizio-full-item">
+            <div class="servizio-full-image">
+                <img src="assets/gallery/prova28.jpg" alt="Bar">
+            </div>
+            <div class="servizio-full-content">
+                <h2 data-i18n="services.items.bar.title">Bar &amp; Caffetteria</h2>
+                <p data-i18n="services.items.bar.body">Caff&egrave; selezionati, bevande fresche e una selezione di aperitivi per accompagnare i vostri momenti di relax. Il nostro bar &egrave; aperto tutto il giorno per servirvi.</p>
+            </div>
+        </div>
+
+        <div class="servizio-full-item reverse">
+            <div class="servizio-full-image">
+                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=2007" alt="Beach Volley">
+            </div>
+            <div class="servizio-full-content">
+                <h2 data-i18n="services.items.volley.title">Beach Volley, Ping Pong e Basket</h2>
+                <p data-i18n="services.items.volley.body">Campo da beach volley disponibile per gli amanti dello sport e del divertimento. Inoltre, abbiamo un campo da ping pong e un canestro per il basket. Porta i tuoi amici e goditi momenti di sport e svago all'aria aperta.</p>
+            </div>
+        </div>
+
+        <div class="servizio-full-item">
+            <div class="servizio-full-image">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070" alt="Docce e Servizi">
+            </div>
+            <div class="servizio-full-content">
+                <h2 data-i18n="services.items.docce.title">Docce &amp; Servizi</h2>
+                <p data-i18n="services.items.docce.body">Docce calde gratuite, spogliatoi puliti e cabine private per garantire il massimo comfort durante la vostra permanenza.</p>
+            </div>
+        </div>
+
+        <div class="servizio-full-item reverse">
+            <div class="servizio-full-image">
+                <img src="assets/gallery/prova27.jpg" alt="Area Cani">
+            </div>
+            <div class="servizio-full-content">
+                <h2 data-i18n="services.items.cani.title">Area Cani</h2>
+                <p data-i18n="services.items.cani.body">Area dedicata ai nostri amici a quattro zampe, attrezzata con ombrelloni, lettini, ciotole per acqua fresca e accesso diretto al mare. Il vostro cane &egrave; il benvenuto nella zona dedicata.</p>
+                <div class="servizio-extra">
+                    <a href="regolamento-cani.html" class="btn-discover-more" data-i18n="services.items.cani.cta">
+                        Scopri il regolamento &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>VEGA <span>101</span></h3>
+                    <p data-i18n="footer.tagline">Il tuo stabilimento balneare a Cesenatico</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/BagnoVega/?locale=it_IT" target="_blank" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/bagnovega/" target="_blank" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.tripadvisor.it/Attraction_Review-g194732-d12244936-Reviews-Bagno_Vega-Cesenatico_Province_of_Forli_Cesena_Emilia_Romagna.html" target="_blank" aria-label="Tripadvisor">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H.225l2.746 2.739c-.641.947-1.007 2.093-1.007 3.324 0 3.272 2.659 5.931 5.931 5.931a5.925 5.925 0 0 0 4.344-1.902l-1.428-1.428a3.944 3.944 0 0 1-2.916 1.296c-2.179 0-3.953-1.774-3.953-3.953s1.774-3.953 3.953-3.953a3.938 3.938 0 0 1 2.564.963l1.502-1.503A5.897 5.897 0 0 0 7.84 6.273c-.857 0-1.681.183-2.42.511L3.667 5.032c1.865-1.134 4.025-1.737 6.339-1.737s4.474.603 6.339 1.737L14.592 6.784c-.739-.328-1.563-.511-2.42-.511a5.897 5.897 0 0 0-4.081 1.889l1.502 1.503a3.938 3.938 0 0 1 2.564-.963c2.179 0 3.953 1.774 3.953 3.953s-1.774 3.953-3.953 3.953a3.944 3.944 0 0 1-2.916-1.296l-1.428 1.428a5.925 5.925 0 0 0 4.344 1.902c3.272 0 5.931-2.659 5.931-5.931 0-1.231-.366-2.377-1.007-3.324l2.746-2.739h-4.136c-2.307-1.569-4.975-2.353-7.645-2.353zM7.84 10.668a2.043 2.043 0 1 0 0 4.086 2.043 2.043 0 0 0 0-4.086zm8.327 0a2.043 2.043 0 1 0 0 4.086 2.043 2.043 0 0 0 0-4.086z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.linksTitle">Link Utili</h4>
+                    <div class="footer-links-grid">
+                        <ul>
+                            <li><a href="index.html" data-i18n="footer.homeLink">Home</a></li>
+                            <li><a href="servizi.html" data-i18n="footer.servicesLink">Servizi</a></li>
+                            <li><a href="menu.html" data-i18n="footer.menuLink">Menu</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="prezzi.html" data-i18n="footer.pricesLink">Prezzi</a></li>
+                            <li><a href="galleria.html" data-i18n="footer.galleryLink">Galleria</a></li>
+                            <li><a href="contatti.html" data-i18n="footer.contactsLink">Contatti</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-i18n="footer.contactTitle">Contatti</h4>
+                    <p data-i18n="footer.location">Zadina di Cesenatico</p>
+                    <p class="footer-hours" data-i18n="footer.hours">Lun - Dom: 7:00 - 21:00</p>
+                    <p class="footer-season" data-i18n="footer.season">(durante la stagione estiva)</p>
+                    <div class="footer-phones">
+                        <p><a href="tel:+390547821227">0547 82127</a></p>
+                        <p><a href="tel:+393294728383">329 4728383</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-privacy">
+                    <a href="privacy.html" data-i18n="footer.privacyLink">Privacy Policy</a>
+                </p>
+                <p data-i18n="footer.copyright" data-i18n-type="html">&copy; 2025 Bagno Vega 101. Tutti i diritti riservati.</p>
+                <p class="footer-agency">
+                    <a href="https://patrickbattistini.it/" target="_blank" rel="noopener noreferrer">web agency</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

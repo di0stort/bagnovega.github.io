@@ -1,0 +1,12 @@
+# robots.txt per Bagno Vega 101
+# Permette l'indicizzazione di tutte le pagine pubbliche
+
+User-agent: *
+Allow: /
+
+# Blocca file di sistema e configurazione (se presenti)
+Disallow: /cgi-bin/
+Disallow: /*.php$
+
+# Indica la sitemap per i motori di ricerca
+Sitemap: https://www.bagnovega101.it/sitemap.xml

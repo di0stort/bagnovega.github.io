@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"c:\\Users\\patri\\Documents\\App\\bagnovega-site\")",
+      "Bash(dir /b \"c:\\Users\\patri\\Documents\\App\\bagnovega-site\\assets\\gallery\")",
+      "Bash(dir:*)",
+      "Bash(for file in servizi.html menu.html prezzi.html galleria.html contatti.html privacy.html)",
+      "Bash(do echo \"Processing $file...\")",
+      "Bash(done)",
+      "Bash(findstr:*)",
+      "Bash(cmd /c \"dir /b c:\\Users\\patri\\Documents\\App\\bagnovega-site\\assets\\gallery\\prova*.jpg\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
